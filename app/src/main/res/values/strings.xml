@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_image_description">Memory game</string>
+    <string name="start_button_text">Start</string>
+    <string name="card_description">Card</string>
+    <string name="game_end_message">"Nice Job !"</string>
+    <string name="restart">Restart</string>
+    <string name="time_score_text">Sorry we couln\'t retrieve your timing</string>
+</resources>

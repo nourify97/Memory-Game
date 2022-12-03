@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameEndFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_fragment_bg_color">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="262dp"
+            android:layout_height="66dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/game_end_message"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19" />
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="@dimen/button_start_width"
+            android:layout_height="@dimen/button_start_height"
+            android:backgroundTint="@color/start_button_bg_color"
+            android:text="@string/restart"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_score"
+            app:layout_constraintVertical_bias="0.110000014" />
+
+        <TextView
+            android:id="@+id/time_score"
+            android:layout_width="344dp"
+            android:layout_height="84dp"
+            android:text="@string/time_score_text"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.100000024" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
